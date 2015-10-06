@@ -3,6 +3,8 @@
 * Obogo (c) 2015
 * https://github.com/obogo/angular-focusmanager
 * License: MIT.
+*
+* @modified pulkit.mittal@accedo.tv
 */
 (function(exports, global) {
     global["fm"] = exports;

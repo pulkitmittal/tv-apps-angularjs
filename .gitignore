@@ -1,0 +1,19 @@
+# XDK Dependencies
+src/dep
+**/src/dep
+
+# Gradle, Gradle compass dependencies and build output folder.
+/.gradle
+/.jruby
+build
+
+# Sass cache and generated CSS
+.sass-cache
+css
+
+# Image cache on Mac and Windows
+.DS_Store
+Thumbs.db
+
+# Windows folder config
+Desktop.ini

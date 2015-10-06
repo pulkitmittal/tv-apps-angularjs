@@ -1,0 +1,6 @@
+Important Links:
+https://github.com/obogo/angular-focusmanager/wiki/How-the-focus-manager-was-created
+http://obogo.github.io/angular-focusmanager/
+https://angular-ui.github.io/bootstrap
+http://getbootstrap.com/css/
+https://code.angularjs.org/1.4.6/docs/api/ng/directive/ngRepeat
