@@ -1,0 +1,62 @@
+* {
+    outline: none !important;
+}
+
+html {
+    background-color: #FFF;
+}
+
+body {
+    background-color: #F8F8F8;
+    width: 1280px;
+    height: 720px;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+
+.navbar-collapse {
+    padding-left: 120px;
+}
+
+.nav.navbar-nav > li > a {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav.navbar-nav > li > a:focus,
+.nav.navbar-nav > li > a.focused {
+    background-color: #7A7AFD !important;
+    color: white !important;
+}
+
+.grid {
+    position: absolute;
+    margin: 0;
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+}
+
+.grid .grid-item img.focused {
+    box-shadow: 1px 1px 20px #7A7AFD;
+}
+
+.grid .grid-item[focus-group="horizontal"] img+img {
+    margin-top: 20px;
+}
+
+.grid .grid-item[focus-group="vertical"] img+img {
+    margin-left: 20px;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="xdk">
+<head>
+    <base href="/angular-xdk/src/">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap-3.3.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/angular-1.4.5.min.js"></script>
+    <script src="js/angular-route-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/angular-focusmanager.js"></script>
+</head>
+<body ng-controller="BodyCtrl"
+    focus-group
+    focus-group-head="stop"
+    focus-group-tail="stop">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" disabled>
+                <img alt="Brand" src="img/xdk.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" ng-controller="HeaderCtrl"
+            focus-group="vertical"
+            focus-group-index="1">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="item in items" ng-class="{ active: isActive(item) }">
+                    <a href=".{{item.url}}">{{item.text}}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ng-view></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="grid row"
+    focus-group="{{orientation}}"
+    ng-style="gridStyle">
+    <div class="grid-item"
+        ng-repeat="item in items | skip:rows"
+        ng-init="outerIndex = $index"
+        focus-group="{{invertOrientation}}"
+        ng-style="gridItemStyle">
+        <img ng-repeat="i in rows | range"
+            focus-index
+            ng-focus="scrollInView($event, outerIndex*rows)"
+            ng-init="img = items[outerIndex*rows+$index]"
+            ng-src="{{img.url}}" width="{{img.width}}" height="{{img.height}}">
+    </div>
+</div>
